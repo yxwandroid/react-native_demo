@@ -1,6 +1,9 @@
 import { AppRegistry } from 'react-native';
-import App from './App';
-import  HelloWorld from './HelloWord'
-import  BlinkApp from './BlinkApp'
-import  MyTextInput from './MyTextInput'
-// AppRegistry.registerComponent('rnMydemo', () => MyTextInput);
+import App from './app/App';
+import  HelloWorld from './app/HelloWord'
+import  BlinkApp from './app/BlinkApp'
+import  MyTextInput from './app/MyTextInput'
+import FlexDiceTest from "./app/01_flex_demo/FlexDiceTest";
+import FlexTest from "./app/01_flex_demo/FlexTest";
+import FetchNetData from "./app/02_fetch_demo/FetchNetData";
+AppRegistry.registerComponent('rnMydemo', () => FetchNetData);
