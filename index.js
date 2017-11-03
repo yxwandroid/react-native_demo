@@ -1,4 +1,4 @@
 import {AppRegistry} from 'react-native';
-import TouchDemo from "./app/06_touch_demo/TouchDemo";
+import ReactNativeDemo from "./app/07_page_by_value/ReactNativeDemo";
 
-AppRegistry.registerComponent('rnMydemo', () => TouchDemo);
+AppRegistry.registerComponent('rnMydemo', () => ReactNativeDemo);
