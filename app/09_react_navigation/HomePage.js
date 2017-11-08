@@ -8,13 +8,11 @@ import {
 } from 'react-native';
 
 
-export  default  class HomePage extends React.Component {
+export default class HomePage extends React.Component {
 
     static navigationOptions = {
         title: '首页',//设置标题内容
-        // header: {
-        //     backTitle: ' ',//返回按钮标题内容（默认为上一级标题内容）
-        // }
+
     }
 
     constructor(props) {
@@ -28,40 +26,12 @@ export  default  class HomePage extends React.Component {
                 <Text style={{padding: 10}}>Hello, Navigation!</Text>
                 <Button
                     onPress={() => navigate('Chat', {user: 'Sybil'})}
-                    title="点击跳转"/>
+                    title="tab 跳转 stack"/>
             </View>
         )
     }
 }
-//
-// const MainScreenNavigator = TabNavigator({
-//         Home: {
-//             screen: HomePage,
-//         },
-//         Certificate: {
-//             screen: MinePage,
-//         },
-//     },
-//     {
-//         lazy: true,
-//         tabBarPosition: 'bottom',
-//         tabBarOptions: {
-//             activeTintColor: '#3e9ce9',
-//             inactiveTintColor: '#999999',
-//             showIcon: true,
-//             style: {
-//                 backgroundColor: '#fff'
-//             },
-//             indicatorStyle: {
-//                 opacity: 0
-//             },
-//             tabStyle: {
-//                 padding: 0
-//             }
-//         }
-//     }
-// );
-//
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -73,12 +43,3 @@ const styles = StyleSheet.create({
         resizeMode: 'contain'
     }
 });
-//
-// const SimpleApp = StackNavigator({
-//     Home: {screen: MainScreenNavigator},
-//     Chat: {screen: ChatScreen},
-//
-// });
-//
-// export default SimpleApp;
-//

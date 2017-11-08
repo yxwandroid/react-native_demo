@@ -1,6 +1,5 @@
 import {StackNavigator, TabNavigator} from 'react-navigation';
 import HomeScreen from './HomeScreen'
-import StackNavigator1 from "./09_react_navigation/StackNavigator1";
 import React_NavigationDemo1 from "./09_react_navigation/React_NavigationDemo1";
 import HomePage from "./09_react_navigation/HomePage";
 import MinePage from "./09_react_navigation/MinePage";
@@ -8,6 +7,7 @@ import ChatScreen from "./09_react_navigation/ChatScreen";
 
 
 const MainScreenNavigator = TabNavigator({
+
         Home: {
             screen: HomePage,
         },
@@ -35,22 +35,15 @@ const MainScreenNavigator = TabNavigator({
     }
 );
 export const App = StackNavigator({
-    //首页
+    //首页 添加新的功能的时候就在这个界面添加跳转逻辑
     Home: {
         screen: HomeScreen,
         navigationOptions: {
             headerTitle: 'Home',
         },
     },
-    //简单的 stackNavigator 使用
-    Details: {
-        screen: StackNavigator1,
-        navigationOptions: {
-            headerTitle: 'StackNavigator',
-        },
-    },
 
-    //界面之间传递数据 使用
+    // Demo1 界面之间传递数据 使用
     NavigationDemo1: {
         screen: React_NavigationDemo1,
         navigationOptions: {
@@ -58,18 +51,19 @@ export const App = StackNavigator({
         },
     },
 
+    //Tab 跳转 stack 使用
+    Chat: {
+        screen: ChatScreen,
+        navigationOptions: {
+            headerTitle: 'Tab 跳转 stack 使用',
+        },
+    },
 
     // stack 嵌套 tab 进行页面跳转
     HomePage: {
         screen: MainScreenNavigator,
         navigationOptions: {
-            headerTitle: 'TabStackDrawer 使用',
-        },
-    },
-    // stack 嵌套 tab 进行页面跳转
-    Chat: {
-        screen: ChatScreen,
-        navigationOptions: {
+
             headerTitle: 'TabStackDrawer 使用',
         },
     },

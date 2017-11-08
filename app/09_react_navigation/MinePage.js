@@ -17,20 +17,11 @@ class MinePage extends Component {
     static navigationOptions = {
         title: '我的',
         drawerLabel: '我的',
-        // Note: By default the icon is only shown on iOS. Search the  showIcon option below.
-        drawerIcon: ({tintColor}) => (
-            <Image
-                source={require('../imgs/demo.jpg')}
-                style={[styles.icon, {tintColor: tintColor}]}
-            />
-        ),
     };
 
     render() {
-        ;
         return (
             <View style={{backgroundColor: '#fff', flex: 1}}>
-                <Text style={{padding: 20}}>Sybil</Text>
                 <Button
                     style={{padding: 20}}
                     onPress={() => this.props.navigation.navigate('DrawerOpen')}
