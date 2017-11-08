@@ -13,7 +13,8 @@
 		"react-native-scrollable-tab-view": "^0.8.0",
 		"react-native-tab-navigator": "^0.3.4",
 		"react-native-tab-view": "^0.0.70",
-		"react-native-xtabbar": "^0.2.1"
+		"react-native-xtabbar": "^0.2.1",
+		"react-navigation": "^1.0.0-beta.19"
 	},
 	"devDependencies": {
 		"babel-jest": "21.2.0",
