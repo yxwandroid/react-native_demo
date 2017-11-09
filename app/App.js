@@ -4,7 +4,7 @@ import React_NavigationDemo1 from "./09_react_navigation/React_NavigationDemo1";
 import HomePage from "./09_react_navigation/HomePage";
 import MinePage from "./09_react_navigation/MinePage";
 import ChatScreen from "./09_react_navigation/ChatScreen";
-
+import StorageDemo from "./10_storage/StorageDemo";
 
 const MainScreenNavigator = TabNavigator({
 
@@ -67,6 +67,14 @@ export const App = StackNavigator({
             headerTitle: 'TabStackDrawer 使用',
         },
     },
+
+
+    GlobaStoragelUtil:{
+        screen: StorageDemo,
+        navigationOptions:{
+            headerTitle:'全局变量和是 Storage 的使用',
+        }
+    }
 
 
 });
