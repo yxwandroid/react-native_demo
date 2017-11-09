@@ -9,7 +9,7 @@ import {
 }from 'react-native';
 
 /**
- * Created by marno on 2017/1/13.
+ * Created by wilson
  * Desc:从网络获取数据，并展示到UI上
  */
 export default class FetchNetData extends Component {

@@ -1,10 +1,6 @@
 import React, {Component} from "react";
 import {StyleSheet, View, Text} from "react-native";
 
-/**
- * Created by marno on 2017/1/13.
- * Desc:模拟骰子进行布局，算是Flex布局各类属性的实战
- */
 export default class FlexDiceTest extends Component {
     render() {
         return (
@@ -18,11 +14,41 @@ export default class FlexDiceTest extends Component {
                 <Text style={FlexDiceTestStyle.item7}>7</Text>
                 <Text style={FlexDiceTestStyle.item8}>8</Text>
                 <Text style={FlexDiceTestStyle.item9}>9</Text>
+
+                <View style={FlexTestStyle.container}>
+                    <Text style={FlexTestStyle.item}>1</Text>
+                    <Text style={FlexTestStyle.item}>2</Text>
+                    <Text style={FlexTestStyle.item}>3</Text>
+                    <Text style={FlexTestStyle.item}>4</Text>
+                    <Text style={FlexTestStyle.item_flex_end}>5</Text>
+                </View>
             </View>
         )
     }
 }
 
+
+
+const FlexTestStyle = StyleSheet.create({
+    container: {
+        backgroundColor: "#0ff",
+        flexDirection: "row",
+        flex: 1,
+    },
+    item: {
+        backgroundColor: "#f0f",
+        flexGrow: 1,//相当于Android控件中的weight属性
+        margin: 4,
+        height: 100,
+    },
+    item_flex_end: {
+        backgroundColor: "#f0f",
+        flexGrow: 1,//相当于Android控件中的weight属性
+        margin: 4,
+        height: 100,
+        alignSelf: "flex-end",
+    }
+})
 const FlexDiceTestStyle = StyleSheet.create({
     container: {
         backgroundColor: "blue",

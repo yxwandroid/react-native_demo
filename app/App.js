@@ -8,6 +8,8 @@ import StorageDemo from "./10_storage/StorageDemo";
 import ImageDemo from "./00_helloword/ImageDemo";
 import CountDown from "./00_helloword/CountDown";
 import Likes from "./00_helloword/Likes";
+import FlexDiceTest from "./01_flex_demo/FlexDiceTest";
+import FetchNetData from "./02_fetch_demo/FetchNetData";
 
 const MainScreenNavigator = TabNavigator({
 
@@ -55,14 +57,28 @@ export const App = StackNavigator({
     CountDown: {
         screen: CountDown,
         navigationOptions: {
-            headerTitle: 'Image',
+            headerTitle: '倒计时',
         },
     },
 
     Likes: {
         screen: Likes,
         navigationOptions: {
-            headerTitle: 'Image',
+            headerTitle: '点赞',
+        },
+    },
+
+    FlexDiceTest: {
+        screen: FlexDiceTest,
+        navigationOptions: {
+            headerTitle: 'flex 布局总结',
+        },
+    },
+
+    FetchNetData: {
+        screen: FetchNetData,
+        navigationOptions: {
+            headerTitle: 'Fetch 网络请求 ',
         },
     },
 
