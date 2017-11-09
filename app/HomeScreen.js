@@ -18,6 +18,25 @@ export default class HomeScreen extends React.Component {
 
         return (
             <View>
+
+                <Button
+                    //image 的使用
+                    onPress={() => navigate('ImageDemo')}
+                    title="image的使用"
+                />
+
+                <Button
+                    //定时器使用 的使用
+                    onPress={() => navigate('CountDown')}
+                    title="定时器使用"
+                />
+
+
+                <Button
+                    //点赞控件
+                    onPress={() => navigate('Likes')}
+                    title="点赞控件"
+                />
                 <Button
                     //跳转界面   并且传递参数
                     onPress={() => navigate('NavigationDemo1', {user: 'wilson'})}

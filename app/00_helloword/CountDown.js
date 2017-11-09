@@ -4,7 +4,10 @@ import {
     View,
 } from 'react-native'
 
-class CountDown extends Component {
+/**
+ * 定时器倒计时   使用方式是箭头函数
+ */
+export  default class CountDown extends Component {
     state = {
         count: 30,
     };

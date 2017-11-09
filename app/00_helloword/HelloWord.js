@@ -12,9 +12,7 @@ export default class HelloWord extends Component<{}> {
     render() {
         return (
             <View style={styles.container}>
-
                 <Text style={styles.text}>wilson1</Text>
-                <Image style={styles.image} source={require('../imgs/demo.jpg')}/>
             </View>
         );
     };

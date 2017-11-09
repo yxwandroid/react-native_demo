@@ -5,6 +5,9 @@ import HomePage from "./09_react_navigation/HomePage";
 import MinePage from "./09_react_navigation/MinePage";
 import ChatScreen from "./09_react_navigation/ChatScreen";
 import StorageDemo from "./10_storage/StorageDemo";
+import ImageDemo from "./00_helloword/ImageDemo";
+import CountDown from "./00_helloword/CountDown";
+import Likes from "./00_helloword/Likes";
 
 const MainScreenNavigator = TabNavigator({
 
@@ -42,6 +45,28 @@ export const App = StackNavigator({
             headerTitle: 'Home',
         },
     },
+    ImageDemo: {
+        screen: ImageDemo,
+        navigationOptions: {
+            headerTitle: 'Image',
+        },
+    },
+
+    CountDown: {
+        screen: CountDown,
+        navigationOptions: {
+            headerTitle: 'Image',
+        },
+    },
+
+    Likes: {
+        screen: Likes,
+        navigationOptions: {
+            headerTitle: 'Image',
+        },
+    },
+
+
 
     // Demo1 界面之间传递数据 使用
     NavigationDemo1: {
