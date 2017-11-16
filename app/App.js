@@ -13,6 +13,7 @@ import FetchNetData from "./02_fetch_demo/FetchNetData";
 import ScrollableTabDemo1 from "./11_scrollable_tab_view/ScrollableTabDemo1";
 import ListViewDemo from "./04_ComponentDemo/ListViewDemo";
 import FlatListDemo from "./12_flat_list/FlatListDemo";
+import PropStateDemo from "./13_prop_and_state/PropStateDemo";
 
 const MainScreenNavigator = TabNavigator({
 
@@ -137,6 +138,12 @@ export const App = StackNavigator({
         screen: FlatListDemo,
         navigationOptions:{
             headerTitle:'FlatList使用',
+        }
+    },
+    PropStateDemo:{
+        screen: PropStateDemo,
+        navigationOptions:{
+            headerTitle:'PropState的区别',
         }
     }
 

@@ -62,6 +62,9 @@ export default class HomeScreen extends React.Component {
                 <Button
                     onPress={() => navigate('FlatListDemo')}
                     title="FlatList使用"/>
+                <Button
+                    onPress={() => navigate('PropStateDemo')}
+                    title="Prop State 的区别"/>
 
             </View>
         );
