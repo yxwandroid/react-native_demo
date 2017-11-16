@@ -6,12 +6,16 @@ import {
     Image
 } from 'react-native';
 
-export default class HelloWord extends Component {
+// noinspection JSAnnotator
+export default class TabViewList extends Component {
 
     render() {
+
+        const {tabLabel, title, image} = this.props;
         return (
+
             <View style={styles.container}>
-                <Text style={styles.text}>wilson1</Text>
+                <Text style={styles.text}>{tabLabel + title + image}</Text>
             </View>
         );
     };
@@ -21,7 +25,6 @@ const styles = StyleSheet.create({
 
         container: {
             backgroundColor: 'red',
-            margin: 20,
         },
         imaga: {
             height: 20,

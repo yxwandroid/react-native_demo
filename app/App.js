@@ -10,6 +10,9 @@ import CountDown from "./00_helloword/CountDown";
 import Likes from "./00_helloword/Likes";
 import FlexDiceTest from "./01_flex_demo/FlexDiceTest";
 import FetchNetData from "./02_fetch_demo/FetchNetData";
+import ScrollableTabDemo1 from "./11_scrollable_tab_view/ScrollableTabDemo1";
+import ListViewDemo from "./04_ComponentDemo/ListViewDemo";
+import FlatListDemo from "./12_flat_list/FlatListDemo";
 
 const MainScreenNavigator = TabNavigator({
 
@@ -114,6 +117,26 @@ export const App = StackNavigator({
         screen: StorageDemo,
         navigationOptions:{
             headerTitle:'全局变量和是 Storage 的使用',
+        }
+    },
+
+
+    ScrollableTabDemo1:{
+        screen: ScrollableTabDemo1,
+        navigationOptions:{
+            headerTitle:'ScrollableTabView使用',
+        }
+    },
+    ListViewDemo:{
+        screen: ListViewDemo,
+        navigationOptions:{
+            headerTitle:'ScrollableTabView使用',
+        }
+    },
+    FlatListDemo:{
+        screen: FlatListDemo,
+        navigationOptions:{
+            headerTitle:'FlatList使用',
         }
     }
 

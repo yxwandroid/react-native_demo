@@ -3,16 +3,21 @@ import {
     StyleSheet,
     Text,
     View,
-    Image
 } from 'react-native';
+import ScrollableTabView ,{DefaultTabBar,ScrollableTabBar,}from 'react-native-scrollable-tab-view';
 
-export default class HelloWord extends Component {
+export default class ScrollableTabDemo1 extends Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                <Text style={styles.text}>wilson1</Text>
-            </View>
+            <ScrollableTabView
+                style={{marginTop: 20, }}
+                initialPage={1}
+                renderTabBar={() => <ScrollableTabBar />}>
+                <Text tabLabel='Tab #1'>My</Text>
+                <Text tabLabel='Tab #2'>favorite</Text>
+                <Text tabLabel='Tab #3'>project</Text>
+            </ScrollableTabView>
         );
     };
 }

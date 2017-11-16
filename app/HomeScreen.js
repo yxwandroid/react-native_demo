@@ -52,6 +52,16 @@ export default class HomeScreen extends React.Component {
                     //全局变量和 Storage 界面
                     onPress={() => navigate('GlobaStoragelUtil')}
                     title="全局变量和是 Storage 的使用"/>
+                <Button
+                    onPress={() => navigate('ScrollableTabDemo1')}
+                    title="ScrollableTabView 使用"/>
+                <Button
+                    onPress={() => navigate('ListViewDemo')}
+                    title="listView 使用"/>
+
+                <Button
+                    onPress={() => navigate('FlatListDemo')}
+                    title="FlatList使用"/>
 
             </View>
         );

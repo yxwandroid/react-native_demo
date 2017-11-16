@@ -6,7 +6,7 @@ import {
     Image
 } from 'react-native';
 
-export default class HelloWord extends Component {
+export default class PropStateDemo extends Component {
 
     render() {
         return (
