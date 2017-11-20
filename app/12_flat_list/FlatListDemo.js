@@ -60,7 +60,7 @@ export default class FlatListDemo extends Component {
                         columnWrapperStyle={{borderWidth: 2, borderColor: 'black', paddingLeft: 20}}
                         horizontal={false}
                         getItemLayout={(data, index) => (
-                            {length: 100, offset: (100 + 2) * index, index}
+                                  {length: 100, offset: (100 + 2) * index, index}
                         )}
 
                         data={data}>

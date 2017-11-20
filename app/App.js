@@ -43,6 +43,7 @@ const MainScreenNavigator = TabNavigator({
         }
     }
 );
+
 export const App = StackNavigator({
     //首页 添加新的功能的时候就在这个界面添加跳转逻辑
     Home: {
