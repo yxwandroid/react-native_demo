@@ -7,9 +7,11 @@
 		"test": "jest"
 	},
 	"dependencies": {
+		"frisbee": "^1.6.4",
 		"native-base": "^2.3.3",
 		"react": "16.0.0-beta.5",
 		"react-native": "0.49.5",
+		"react-native-i18n": "^2.0.9",
 		"react-native-scrollable-tab-view": "^0.8.0",
 		"react-native-storage": "^0.2.2",
 		"react-native-tab-navigator": "^0.3.4",

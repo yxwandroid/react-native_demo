@@ -20,6 +20,11 @@ export default class HomeScreen extends React.Component {
             <View>
 
                 <Button
+                    //HelloWord
+                    onPress={() => navigate('HelloWord')}
+                    title="HelloWord"/>
+
+                <Button
                     //image 的使用
                     onPress={() => navigate('ImageDemo')}
                     title="image的使用"/>
@@ -66,6 +71,10 @@ export default class HomeScreen extends React.Component {
                     onPress={() => navigate('PropStateDemo')}
                     title="Prop State 的区别"/>
 
+
+                <Button
+                    onPress={() => navigate('I18nDemo')}
+                    title="国际化"/>
             </View>
         );
     }

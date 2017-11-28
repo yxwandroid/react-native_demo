@@ -14,6 +14,8 @@ import ScrollableTabDemo1 from "./11_scrollable_tab_view/ScrollableTabDemo1";
 import ListViewDemo from "./04_ComponentDemo/ListViewDemo";
 import FlatListDemo from "./12_flat_list/FlatListDemo";
 import PropStateDemo from "./13_prop_and_state/PropStateDemo";
+import HelloWord from "./00_helloword/HelloWord";
+import I18nDemo from "./14_I18nDemo/I18nDemo";
 
 const MainScreenNavigator = TabNavigator({
 
@@ -50,6 +52,13 @@ export const App = StackNavigator({
         screen: HomeScreen,
         navigationOptions: {
             headerTitle: 'Home',
+        },
+    },
+
+    HelloWord: {
+        screen: HelloWord,
+        navigationOptions: {
+            headerTitle: 'HelloWord',
         },
     },
     ImageDemo: {
@@ -145,6 +154,13 @@ export const App = StackNavigator({
         screen: PropStateDemo,
         navigationOptions:{
             headerTitle:'PropState的区别',
+        }
+    },
+
+    I18nDemo:{
+        screen: I18nDemo,
+        navigationOptions:{
+            headerTitle:'国际化 ',
         }
     }
 

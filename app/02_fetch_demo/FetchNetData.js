@@ -7,7 +7,26 @@ import {
     ToastAndroid,
 
 }from 'react-native';
+import Frisbee from 'frisbee';
 
+const api=new Frisbee({
+    baseURI:'https://api.github.com',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'Accept-Charset': 'utf-8',
+        'Method': 'GET',
+    }
+});
+
+fetchFrisbeeData();
+const  mydata='';
+async function fetchFrisbeeData(){
+    let data= await api.get('/users/mralexgray/repos');
+    console.log(data)
+    // noinspection JSAnnotator
+    mydata=data;
+}
 /**
  * Created by wilson
  * Desc:从网络获取数据，并展示到UI上
@@ -20,6 +39,9 @@ export default class FetchNetData extends Component {
         };
     }
 
+
+
+
     //发起网络请求，获取数据
     fetchUserList() {
         const url = 'https://api.github.com/users/mralexgray/repos';
@@ -31,7 +53,7 @@ export default class FetchNetData extends Component {
                     ToastAndroid.show(responseJson.msg, ToastAndroid.SHORT)
 
                     var firstUser = users[0].owner;
-                    console.log(firstUser);
+                    console.log(responseJson);
                     this.setState({
                         user: firstUser,
                     })
@@ -39,6 +61,8 @@ export default class FetchNetData extends Component {
             )
             .catch((error)=>console.error(error))
     }
+
+
 
     //页面渲染完成后会主动回调该方法
     componentDidMount() {
@@ -66,6 +90,8 @@ export default class FetchNetData extends Component {
                     <Text style={UserItemStyle.text_UserID}>{item.id}</Text>
                     <Text style={UserItemStyle.text_UserType}>{item.type}</Text>
                 </View>
+
+                {/*<Text style={UserItemStyle.text_UserType}>{mydata}</Text>*/}
             </View>
         )
     }
