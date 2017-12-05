@@ -126,7 +126,7 @@ export default class FetchNetData extends Component {
                     ToastAndroid.show(responseJson.msg, ToastAndroid.SHORT)
 
                     var firstUser = users[0].owner;
-                    console.log(responseJson);
+                  //  console.log(responseJson);
                     this.setState({
                         user: firstUser,
                     })

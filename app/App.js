@@ -16,6 +16,7 @@ import FlatListDemo from "./12_flat_list/FlatListDemo";
 import PropStateDemo from "./13_prop_and_state/PropStateDemo";
 import HelloWord from "./00_helloword/HelloWord";
 import I18nDemo from "./14_I18nDemo/I18nDemo";
+import Air_anim_shape from "./15_art_anim_shape/Air_anim_shape";
 
 const MainScreenNavigator = TabNavigator({
 
@@ -161,6 +162,12 @@ export const App = StackNavigator({
         screen: I18nDemo,
         navigationOptions:{
             headerTitle:'国际化 ',
+        }
+    },
+    Air_anim_shape:{
+        screen: Air_anim_shape,
+        navigationOptions:{
+            headerTitle:'AnimShape',
         }
     }
 

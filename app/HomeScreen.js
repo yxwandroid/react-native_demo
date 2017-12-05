@@ -75,6 +75,9 @@ export default class HomeScreen extends React.Component {
                 <Button
                     onPress={() => navigate('I18nDemo')}
                     title="国际化"/>
+                <Button
+                    onPress={() => navigate('Air_anim_shape')}
+                    title="AnimShape"/>
             </View>
         );
     }

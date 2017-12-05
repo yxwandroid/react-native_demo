@@ -12,7 +12,7 @@ export default class HelloWord extends Component {
     static  staticObjec="静态成员变量"  //使用类名进行调用
     static staticMethod () {  //定义类的静态成员函数
         console.log("欢迎访问hangge.com");
-        alert('静态成员方法')
+      //  alert('静态成员方法')
     }
     constructor(props) {
       super(props);
