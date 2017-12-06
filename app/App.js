@@ -17,6 +17,7 @@ import PropStateDemo from "./13_prop_and_state/PropStateDemo";
 import HelloWord from "./00_helloword/HelloWord";
 import I18nDemo from "./14_I18nDemo/I18nDemo";
 import Air_anim_shape from "./15_art_anim_shape/Air_anim_shape";
+import MyResponder from "./16_responder/MyResponder";
 
 const MainScreenNavigator = TabNavigator({
 
@@ -168,6 +169,12 @@ export const App = StackNavigator({
         screen: Air_anim_shape,
         navigationOptions:{
             headerTitle:'AnimShape',
+        }
+    },
+    MyResponder:{
+        screen: MyResponder,
+        navigationOptions:{
+            headerTitle:'Responder使用',
         }
     }
 

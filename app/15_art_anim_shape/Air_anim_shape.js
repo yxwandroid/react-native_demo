@@ -41,6 +41,11 @@ export default class Air_anim_shape extends Component {
         this.state = {
             blnUpdate: false
         }
+
+        // this.onResponderGrant = this.onResponderGrant.bind(this)
+        // this.onPanResponderMove = this.onPanResponderMove.bind(this)
+        // this.onPanResponderRelease = this.onPanResponderRelease.bind(this)
+        // this.onPanResponderTerminate = this.onPanResponderTerminate.bind(this)
     }
     setUpdate () {
         this.setState({
@@ -51,6 +56,7 @@ export default class Air_anim_shape extends Component {
         this.gestureHandlers = PanResponder.create({
             onStartShouldSetPanResponder: (e, g) => true, // 用户开始触摸屏幕的时候，是否愿意成为响应者；默认返回false，无法响应，当返回true的时候则可以进行之后的事件传递。
             onMoveShouldSetPanResponder: (e, g) => true, // 在每一个触摸点开始移动的时候，再询问一次是否响应触摸交互；
+
             onPanResponderGrant: (e, g) => this.onResponderGrant(e, g), // 开始手势操作，也可以说按下去。给用户一些视觉反馈，让他们知道发生了什么事情！
             onPanResponderMove: (e, g) => this.onResponderMove(e, g), // 最近一次的移动距离.如:(获取x轴y轴方向的移动距离 gestureState.dx,gestureState.dy)
             onPanResponderRelease: (e, g) => this.onResponderRelease(e, g), // 用户放开了所有的触摸点，且此时视图已经成为了响应者。
@@ -61,7 +67,7 @@ export default class Air_anim_shape extends Component {
         // this._autoUpdate = setInterval(this.autoUpdate.bind(this), 1 / 60)
     }
     componentWillUnmount () {
-        this._autoUpdate && clearInterval(this._autoUpdate)
+        // this._autoUpdate && clearInterval(this._autoUpdate)
         this.ResetDrawPoint()
         this.showPoints = null
     }

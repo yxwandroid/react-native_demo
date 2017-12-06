@@ -63,18 +63,19 @@ export default class HomeScreen extends React.Component {
                 <Button
                     onPress={() => navigate('ListViewDemo')}
                     title="listView 使用"/>
-
                 <Button
                     onPress={() => navigate('FlatListDemo')}
                     title="FlatList使用"/>
                 <Button
                     onPress={() => navigate('PropStateDemo')}
                     title="Prop State 的区别"/>
-
-
                 <Button
                     onPress={() => navigate('I18nDemo')}
                     title="国际化"/>
+
+                <Button
+                    onPress={() => navigate('MyResponder')}
+                    title="Responder使用"/>
                 <Button
                     onPress={() => navigate('Air_anim_shape')}
                     title="AnimShape"/>

@@ -10,7 +10,7 @@ import {
     View
 } from 'react-native';
 // noinspection JSAnnotator
-export default class Demo extends Component<{}> {
+export default class Demo extends Component {
     render() {
 
         return (
