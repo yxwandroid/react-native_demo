@@ -26,8 +26,8 @@ async function fetchFrisbeeData(){
     let myarray=data.body;  // 使用的是数组
     for (let i=0;i<myarray.length;i++){
         let firstUser = myarray[i].owner;
-        console.log(firstUser.id)
-        console.log(firstUser.url)
+       // console.log(firstUser.id)
+      //  console.log(firstUser.url)
 
     }
 }
