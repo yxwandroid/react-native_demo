@@ -16,6 +16,8 @@
 		"react-native-i18n": "^2.0.9",
 		"react-native-qrcode": "^0.2.6",
 		"react-native-scrollable-tab-view": "^0.8.0",
+		"react-native-smart-barcode": "^1.0.6",
+		"react-native-smart-timer-enhance": "^1.0.3",
 		"react-native-storage": "^0.2.2",
 		"react-native-tab-navigator": "^0.3.4",
 		"react-native-tab-view": "^0.0.70",
