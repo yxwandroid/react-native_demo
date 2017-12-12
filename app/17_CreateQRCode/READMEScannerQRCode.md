@@ -132,7 +132,66 @@ react-native 代码
 
 -------
 
- 
+###### android 配置
+
+1 在android/settings.gradle文件中：
+
+        include ':react-native-smart-barcode'
+        project(':react-native-smart-barcode').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-smart-barcode/android')
+
+2 在android/app/build.gradle文件中：
+
+    dependencies {
+        ...
+        // 在这里添加
+        compile project(':react-native-smart-barcode')
+    }
+    
+3 在MainApplication.java文件中（这里官方上面有错误，在这里修改一下）：
+
+    ...
+    //将原来的代码注释掉，换成这句
+    private ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+        //  private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+        @Override
+        protected boolean getUseDeveloperSupport() {
+          return BuildConfig.DEBUG;
+        }
+    
+        @Override
+        protected List<ReactPackage> getPackages() {
+          return Arrays.<ReactPackage>asList(
+                  new MainReactPackage(),
+                  //直接在这里添加
+                  new RCTCapturePackage()
+          );
+        }
+      };
+      //添加
+      public void setReactNativeHost(ReactNativeHost reactNativeHost) {
+        mReactNativeHost = reactNativeHost;
+      }
+    
+      @Override
+      public ReactNativeHost getReactNativeHost() {
+        return mReactNativeHost;
+      }
+    ...
+
+
+4.在AndroidManifest.xml文件中添加相机权限:
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    
+    
+    
+###### 参考
+作者：你的男孩_阿强
+链接：http://cdn2.jianshu.io/p/8bef243bc35d
+
 
 ######    关注公众号获取更多内容
 ![](https://raw.githubusercontent.com/yxwandroid/question/master/%E5%85%AC%E4%BC%97%E5%8F%B78cm.jpg)
