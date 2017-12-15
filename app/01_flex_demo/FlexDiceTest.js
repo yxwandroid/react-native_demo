@@ -5,13 +5,13 @@ export default class FlexDiceTest extends Component {
     render() {
         return (
             <ScrollView>
-                {/*<View style={FlexDiceTestStyle.container}>*/}
-                {/*<Text style={FlexDiceTestStyle.item1}>1</Text>*/}
-                {/*<Text style={FlexDiceTestStyle.item2}>2</Text>*/}
-                {/*<Text style={FlexDiceTestStyle.item3}>3</Text>*/}
-                {/*<Text style={FlexDiceTestStyle.item4}>4</Text>*/}
-                {/*<Text style={FlexDiceTestStyle.item5}>5</Text>*/}
-                {/*</View>*/}
+                <View style={FlexDiceTestStyle.container}>
+                <Text style={FlexDiceTestStyle.item1}>1</Text>
+                <Text style={FlexDiceTestStyle.item2}>2</Text>
+                <Text style={FlexDiceTestStyle.item3}>3</Text>
+                <Text style={FlexDiceTestStyle.item4}>4</Text>
+                <Text style={FlexDiceTestStyle.item5}>5</Text>
+                </View>
 
                 {/*<View style={FlexTestStyle.container}>*/}
                 {/*<Text style={FlexTestStyle.item}>1</Text>*/}
@@ -25,12 +25,12 @@ export default class FlexDiceTest extends Component {
                 {/*</View>*/}
 
 
-                <View style={MyStyles.container}>
-                    <Image style={MyStyles.image} source={require('../imgs/demo.jpg')}>
-                        <Text style={MyStyles.text}>4</Text>
-                    </Image>
+                {/*<View style={MyStyles.container}>*/}
+                    {/*<Image style={MyStyles.image} source={require('../imgs/demo.jpg')}>*/}
+                        {/*<Text style={MyStyles.text}>4</Text>*/}
+                    {/*</Image>*/}
 
-                </View>
+                {/*</View>*/}
             </ScrollView>
         )
     }
@@ -65,7 +65,7 @@ const FlexDiceTestStyle = StyleSheet.create({
         height: 500,
         //height: 10000,
         //width: 10000,
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         // justify-content:
         // flex-start   左对齐
         // flex-end     右对齐
@@ -86,7 +86,8 @@ const FlexDiceTestStyle = StyleSheet.create({
         // column-reverse ↑*(上箭头)
 
 
-        // alignItems:'stretch',
+        // alignItems:'flex-end',
+        //alignItems enum('flex-start', 'flex-end', 'center', 'stretch')
     },
     item1: {
         color: "#fff",

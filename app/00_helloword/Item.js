@@ -11,8 +11,7 @@ import {
     Text,
     Image,
 } from 'react-native';
-// noinspection JSAnnotator
-export default class Demo extends Component {
+export default class Item extends Component {
     render() {
 
         return (

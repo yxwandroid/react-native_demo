@@ -186,7 +186,16 @@ react-native 代码
     <uses-feature android:name="android.hardware.camera"/>
     <uses-feature android:name="android.hardware.camera.autofocus"/>
     
-    
+######可能会遇到的问题
+ ![](http://oo0vme8mf.bkt.clouddn.com/15131302668377.png)
+
+
+    这是因为react-Native 0.48后被移除了 PropTypes 所以在项目上重新导入PropTypes
+    导入方式是
+    import PropTypes from 'prop-types';
+图示如下    
+![](http://oo0vme8mf.bkt.clouddn.com/15131303402700.jpg)
+
     
 ###### 参考
 作者：你的男孩_阿强
