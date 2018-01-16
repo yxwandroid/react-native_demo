@@ -6,7 +6,7 @@ import {
     Image
 } from 'react-native';
 
-export default class HelloWord extends Component {
+export default class ScreenOn extends Component {
 
 
     constructor(props) {

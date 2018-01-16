@@ -1,6 +1,5 @@
 
-
-### React Native的使用总结
+### React-Native flex 布局使用总结
 #### 父视图属性(容器属性)：
 1. flexDirection  : 对子布局方向的设置 
         
@@ -67,7 +66,7 @@ http://www.jianshu.com/p/688b9108a922
 ![](http://oo0vme8mf.bkt.clouddn.com/15133065651936.jpg)
 
 ######    关注公众号获取更多内容
-![公众号8cm](http://oo0vme8mf.bkt.clouddn.com/公众号8cm.jpg)
 
+![公众号8cm](http://oo0vme8mf.bkt.clouddn.com/公众号8cm.jpg)
 
 
