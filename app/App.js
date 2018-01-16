@@ -19,6 +19,7 @@ import I18nDemo from "./14_I18nDemo/I18nDemo";
 import Air_anim_shape from "./15_art_anim_shape/Air_anim_shape";
 import MyResponder from "./16_responder/MyResponder";
 import CreateQRCode from "./17_CreateQRCode/CreateQRCode";
+import ScreenOn from "./18_screen_always_on/ScreenOn";
 
 const MainScreenNavigator = TabNavigator({
 
@@ -182,6 +183,13 @@ export const App = StackNavigator({
         screen: CreateQRCode,
         navigationOptions:{
             headerTitle:'生成二维码',
+        }
+    },
+
+    ScreenOn:{
+        screen: ScreenOn,
+        navigationOptions:{
+            headerTitle:'屏幕常亮',
         }
     }
 

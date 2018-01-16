@@ -83,6 +83,10 @@ export default class HomeScreen extends React.Component {
                     <Button
                         onPress={() => navigate('CreateQRCode')}
                         title="CreateQRCode"/>
+
+                    <Button
+                        onPress={() => navigate('ScreenOn')}
+                        title="屏幕常亮"/>
                 </ScrollView>
             </View>
         );
